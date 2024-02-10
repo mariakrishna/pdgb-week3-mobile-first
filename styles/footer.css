@@ -1,0 +1,13 @@
+hr {
+    margin: 0;
+    color: var(--azul);
+}
+
+footer {
+    background-color: var(--branco);
+    padding: 1em;
+} 
+
+.footer {
+    color: var(--preto);
+}
