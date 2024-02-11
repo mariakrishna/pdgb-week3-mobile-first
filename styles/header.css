@@ -20,6 +20,17 @@
     display: inline-block;
 }
 
+.container__menu__button:checked ~ .container__label>.header__hamburger-menu {
+    background: url("../img/Menu\ Aberto.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.container__menu__button:checked ~ .container__label {
+    background: var(--azul-degrade);
+}
+
 .container__img {
     padding: 1em;
 }
@@ -119,9 +130,32 @@ quando é mobile first: min-width*/
     .options__button {
         display: none;
     }
+
+    .options__item {
+        padding: 2em 1em;
+    }
+
+    .options__button:checked ~ .options__label>.options__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .menu-list__item:hover {
+        background: var(--azul-degrade);
+        
+    }
+
+    .menu-list__item:hover>.menu-list__link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
 }
 
 @media screen and (min-width: 1728px) {
+    .container__title {
+        margin-right: 1em;
+    }
+
     .container__link {
         display: flex;
         align-items: center;
